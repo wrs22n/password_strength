@@ -1,0 +1,11 @@
+<div class="main">
+  <label>Your password:</label>
+  <input
+    type="password"
+    [(ngModel)]="password"
+    (ngModelChange)="onPasswordChange()"
+  />
+  <div [ngClass]="passwordStrength[0]">Easy</div>
+  <div [ngClass]="passwordStrength[1]">Medium</div>
+  <div [ngClass]="passwordStrength[2]">Strong</div>
+</div>
